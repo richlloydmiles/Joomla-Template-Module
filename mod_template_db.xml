@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Template DB</name>
+	<creationDate>Jan 2014</creationDate>
+	<copyright>GNU</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>richard@wobble.co.za</authorEmail>
+	<authorUrl>www.wobble.co.za</authorUrl>
+	<version>0.0</version>
+	<description>A template module that connects to the DB and returns results</description>
+	<files>
+		<filename module="mod_template_db">mod_template_db.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl/</folder>
+		<filename>index.html</filename>
+	</files>
+	<config>
+			<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="Layout"
+					description="Page Layout" />
+				<field
+					name="heading"
+					type="text"
+					label="Heading"
+					description="Edit Heading Text" />
+				</fieldset>
+				</fields>
+	</config>
+</extension>
